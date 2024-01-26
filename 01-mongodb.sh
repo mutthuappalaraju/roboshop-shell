@@ -20,7 +20,7 @@ VALIDATE(){
     fi
 }
 
-if [ id -ne 0 ]
+if [ $id -ne 0 ]
 then
     echo -e "$R please run the script root acess $N"
     exit 1
