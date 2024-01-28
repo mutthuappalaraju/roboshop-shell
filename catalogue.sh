@@ -45,12 +45,12 @@ VALIDATE $? "install nodejs"
 id roboshop
 
 if [ $? -ne 0 ]
-    then 
-        useradd roboshop
-        VALIDATE $? " roboshop user creation"
-    else
-        echo -e "user already creating...$Y skipping $N"
-    fi
+then 
+    useradd roboshop
+    VALIDATE $? " roboshop user creation"
+else
+    echo -e "user already creating...$Y skipping $N"
+fi
 
 mkdir -p /app
 
